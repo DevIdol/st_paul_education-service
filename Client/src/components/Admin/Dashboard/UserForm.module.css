@@ -1,0 +1,17 @@
+.userFormWrapper h2 {
+  padding-bottom: 20px;
+  font-size: 24px;
+}
+
+.userForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.submitBtn {
+  width: 100%;
+}

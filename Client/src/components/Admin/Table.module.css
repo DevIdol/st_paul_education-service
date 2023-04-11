@@ -1,0 +1,20 @@
+.tbHeaderRow {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  background-color: var(--btn-color) !important;
+}
+.totalMark {
+  font-weight: 600;
+  background-color: #c0c0c0;
+}
+
+.selectMonth{
+  padding: 6px 30px;
+  border-radius: var(--border-radius);
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.selectMonth option{
+  font-size: 16px;
+}

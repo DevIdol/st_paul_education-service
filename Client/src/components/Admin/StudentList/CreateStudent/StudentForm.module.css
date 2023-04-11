@@ -1,0 +1,65 @@
+.studentForm {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.studentForm .firstGP,
+.studentForm .secondGP {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.selectOption {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.selectOption option:nth-child(1) {
+  color: gray !important;
+}
+
+.selectOption option:hover {
+  background-color: var(--btn-color) !important;
+}
+
+.title {
+  font-size: 18px;
+  text-align: center;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.btn .cancelBtn {
+  background-color: var(--error-color);
+}
+.btn .cancelBtn:hover {
+  color: var(--font-light);
+}
+
+@media screen and (max-width: 560px) {
+  .createStudent {
+    padding-top: 80px !important;
+  }
+  .studentForm {
+    gap: 10px;
+    width: 100%;
+  }
+  .studentForm .firstGP{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+  .studentForm .secondGP{
+    gap: 2px;
+  }
+}

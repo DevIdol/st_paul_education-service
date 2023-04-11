@@ -1,0 +1,12 @@
+.tbHeaderRow {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  background-color: var(--btn-color) !important;
+}
+
+.tbCell {
+  font-weight: 600 !important;
+}
+.totalMark>.tbCell{
+    color: var(--error-color);
+}

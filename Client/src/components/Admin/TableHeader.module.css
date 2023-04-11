@@ -1,0 +1,29 @@
+.tableHeaderWrapper {
+  padding: 0px 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tableHeaderWrapper h3 {
+  font-size: 20px;
+}
+
+.tableHeaderWrapper .link {
+  background-color: var(--btn-color);
+  padding:4px 14px;
+  border-radius: var(--border-radius);
+  color: var(--font-dark);
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.tableHeaderWrapper .link:hover {
+  background-color: var(--btn-hover);
+  color: var(--font-light);
+  transition: var(--transition);
+}
+
+.addIcon{
+ font-size: 30px !important;
+}

@@ -1,0 +1,21 @@
+.sideBarRight {
+  margin-left: 260px;
+  max-width: var(100% - 260px);
+  padding: 20px;
+  padding-top: 110px;
+  padding-bottom: 100px;
+}
+
+@media screen and (max-width: 1180px) {
+  .sideBarRight {
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 80px !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .sideBarRight {
+    padding-top: 37.5vw;
+  }
+}

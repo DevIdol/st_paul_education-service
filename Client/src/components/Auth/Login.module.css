@@ -1,0 +1,67 @@
+.loginWrapper {
+  padding-top: 160px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  padding: 20px 40px;
+  border: 2px solid var(--btn-color);
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+
+.card:hover {
+  border: 2px solid var(--btn-hover);
+  transition: var(--transition);
+}
+
+.loginWrapper .link {
+  color: var(--font-dark);
+}
+
+.loginWrapper .icon {
+  font-size: 46px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.loginWrapper h3 {
+  font-size: 22px;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .loginWrapper {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .loginWrapper {
+    flex-direction: column;
+    gap: 9.375vw;
+  }
+
+  .card {
+    padding: 6.25vw 12.5vw;
+    border: 0.625vw solid var(--btn-color);
+  }
+
+  .card:hover {
+    border: 0.625vw solid var(--btn-hover);
+  }
+
+  .loginWrapper .icon {
+    font-size: 14.375vw;
+    margin: 0 auto;
+  }
+
+  .loginWrapper h3 {
+    font-size: 6.875vw;
+  }
+}

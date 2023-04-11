@@ -1,0 +1,25 @@
+.input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--gray-color);
+  border-radius: var(--border-radius);
+  font-size: 16px;
+}
+.input:focus {
+  outline: none;
+  border: 1px solid var(--btn-hover);
+  transition: var(--transition);
+}
+
+@media screen and (max-width: 320px) {
+  .input {
+    width: 100%;
+    padding: 3.75vw;
+    border: 0.313vw solid var(--gray-color);
+    font-size: 5vw;
+  }
+  .input:focus {
+    outline: none;
+    border: 0.313vw solid var(--btn-hover);
+  }
+}

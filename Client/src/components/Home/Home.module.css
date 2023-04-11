@@ -1,0 +1,32 @@
+.homeWrapper {
+  padding-top: 140px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.homeWrapper h2 {
+  padding-top: 20px;
+  font-size: 20px;
+}
+.homeWrapper h3 {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 320px) {
+  .homeWrapper {
+    padding-top: 43.75vw;
+    gap: 6.25vw;
+  }
+
+  .homeWrapper h2 {
+    padding-top: 6.25vw;
+    font-size: 6.25vw;
+  }
+  .homeWrapper h3 {
+    font-size: 5.625vw;
+  }
+}

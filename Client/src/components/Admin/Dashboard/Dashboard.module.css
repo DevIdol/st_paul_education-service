@@ -1,0 +1,68 @@
+.cardWrapper {
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.card {
+  background-color: var(--nav-color);
+  width: 24%;
+  border-radius: var(--border-radius);
+  padding: 20px;
+}
+
+.card .link {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.card h3 {
+  font-size: 24px;
+  color: var(--font-light);
+  transition: var(--transition);
+}
+.card p {
+  font-weight: 600;
+  color: var(--font-light);
+  transition: var(--transition);
+}
+.card .link:hover h3,
+.card .link:hover p {
+  color: var(--btn-color);
+  transition: var(--transition);
+}
+
+.verifyBtn {
+  background-color: transparent;
+  border-radius: var(--border-radius);
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 4px;
+}
+
+.admin {
+  color: var(--success-color);
+  cursor: pointer;
+}
+.user {
+  color: var(--error-color);
+  cursor: pointer;
+}
+.deleteBtn {
+  color: var(--error-color);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .card{
+    width: 240px;
+  }
+  .cardWrapper {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+  }
+}

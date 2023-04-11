@@ -1,0 +1,22 @@
+.button {
+  margin-top: 10px;
+  background-color: var(--btn-color);
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+.button:hover {
+  background-color: var(--btn-hover);
+  transition: var(--transition);
+  color: var(--font-light);
+}
+
+@media screen and (max-width: 320px) {
+  .button {
+    margin-top: 3.125vw;
+    padding: 3.125vw 6.25vw;
+    font-size: 5vw;
+  }
+}

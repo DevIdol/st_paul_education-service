@@ -1,0 +1,38 @@
+.selectMonth {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px 10px;
+}
+.selectMonth select {
+  cursor: pointer;
+}
+
+.editForm {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: var(--border-radius);
+  padding: 30px;
+}
+
+@media screen and (max-width: 1180px) {
+  .editForm {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .editForm {
+    width: 94%;
+  }
+  .editForm {
+    margin-top: 80px;
+  }
+}

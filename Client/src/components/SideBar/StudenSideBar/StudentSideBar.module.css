@@ -1,0 +1,66 @@
+.sideBarList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sideBarList li {
+  color: var(--font-light);
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+}
+.sideBarList>li:nth-child(1) {
+  padding-bottom: 22px;
+}
+.sideBarList>li:nth-child(2){
+  padding-bottom: 10px;
+}
+.sideBarList li .link {
+  color: var(--font-light);
+}
+.logout {
+  padding-top: 16px;
+}
+
+.gradeWrapper ::-webkit-scrollbar {
+  width: 10px !important;
+  color: var(--btn-hover);
+}
+
+/* Track */
+.gradeWrapper ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* Handle */
+.gradeWrapper ::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: var(--btn-hover);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+.gradeWrapper ::-webkit-scrollbar-thumb:window-inactive {
+  background: var(--btn-hover);
+}
+
+.selectGrade {
+  background-color: #0f131b;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  height: 160px;
+  overflow-y: scroll;
+}
+
+@media screen and (max-width: 320px) {
+  .sideBarList {
+    gap: 9.375vw;
+  }
+  .sideBarList li {
+    font-size: 5.625vw;
+  }
+}

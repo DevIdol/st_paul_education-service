@@ -1,0 +1,74 @@
+.card {
+  width: 40%;
+  padding: 20px;
+  border: 2px solid var(--btn-color);
+  border-radius: var(--border-radius);
+  margin: 0 auto;
+  margin-top: 140px;
+}
+.card h3 {
+  font-size: 24px;
+  text-align: center;
+}
+.card .error {
+  padding-top: 20px;
+  color: var(--error-color);
+  text-align: center;
+}
+.card form {
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.showPass {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding-left: 10px;
+}
+.showPass input[type="checkbox"] {
+  accent-color: var(--btn-color);
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+}
+.showPass span {
+  font-size: 12px;
+}
+.loginBtn {
+  width: 100%;
+}
+@media screen and (max-width: 1180px) {
+  .card {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .card {
+    width: 98%;
+    padding: 6.25vw;
+    border: 0.625vw solid var(--btn-color);
+    margin: 0 auto;
+    margin-top: 43.75vw;
+  }
+  .card h3 {
+    font-size: 7.5vw;
+  }
+  .card form {
+    padding-top: 6.25vw;
+    gap: 6.25vw;
+  }
+}

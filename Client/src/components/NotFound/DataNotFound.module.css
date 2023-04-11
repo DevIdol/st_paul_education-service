@@ -1,0 +1,9 @@
+.dataNotFound{
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dataNotFound h3{
+    font-size: 20px;
+}

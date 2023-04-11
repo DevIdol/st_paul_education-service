@@ -1,0 +1,38 @@
+.editForm {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 90px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: var(--border-radius);
+  padding:10px 0px 20px;
+}
+
+@media screen and (max-width: 1180px) {
+  .editForm {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .editForm {
+    width: 96%;
+    margin-top: 76px !important;
+  }
+  .editForm div{
+    width: 96%;
+    margin: 0 auto !important;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .editForm {
+    width: 96%;
+    margin-top: 60px !important;
+  }
+  .editForm div{
+    margin: 0 auto !important;
+  }
+}

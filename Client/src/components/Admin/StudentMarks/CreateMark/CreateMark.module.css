@@ -1,0 +1,60 @@
+.addSubWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.addSubject {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.removeIcon {
+  color: var(--error-color);
+  cursor: pointer;
+  font-size: 26px;
+}
+.addIcon {
+  margin: 10px;
+  color: var(--success-color);
+  cursor: pointer;
+}
+
+.montAtten {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.submitBtn {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.btn {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.btn .cancelBtn {
+  background-color: var(--error-color);
+}
+.btn .cancelBtn:hover {
+  color: var(--font-light);
+}
+
+@media screen and (max-width: 400px) {
+  .removeIcon {
+    font-size: 20px !important;
+  }
+}

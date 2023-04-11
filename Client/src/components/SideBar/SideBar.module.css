@@ -1,0 +1,132 @@
+.sideBar {
+  position: fixed;
+  background-color: var(--nav-color);
+  top: 0px;
+  left: 0;
+  bottom: 0;
+  width: 260px;
+  height: 100vh;
+  padding-top: 100px;
+  z-index: 99;
+}
+
+.menuBtn {
+  display: none;
+}
+
+@media screen and (max-width: 1180px) {
+  .menuBtn {
+    display: block;
+    position: fixed;
+    top: 26px;
+    left: 96%;
+    width: 30px;
+    height: 40px;
+    z-index: 9999;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  .menuBtn span {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--font-light);
+    transition: var(--transition);
+  }
+  .menuBtn span:nth-child(1) {
+    top: 0;
+  }
+  .menuBtn span:nth-child(2) {
+    top: 10px;
+  }
+  .menuBtn span:nth-child(3) {
+    top: 20px;
+  }
+  .menuBtn.active span {
+    transition: var(--transition);
+  }
+  .menuBtn.active span:nth-child(1) {
+    transform: translateY(10px) rotate(-45deg);
+  }
+  .menuBtn.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .menuBtn.active span:nth-child(3) {
+    transform: translateY(-10px) rotate(45deg);
+  }
+  .sideBar {
+    left: -300px;
+    transition: var(--transition);
+  }
+  .sideBar.active {
+    left: 0;
+    transition: var(--transition);
+  }
+  .overflow {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 9;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menuBtn {
+    display: block;
+    position: fixed;
+    top: 26px;
+    left: 94vw;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .menuBtn {
+    display: block;
+    position: fixed;
+    top: 26px;
+    left: 90vw;
+  }
+  .menuBtn span {
+    height: 2px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .menuBtn {
+    display: block;
+    width: 9.375vw;
+    height: 12.5vw;
+    position: fixed;
+    top: 5.475vw;
+    left: 88vw;
+  }
+  .menuBtn span {
+    height: 0.938vw;
+  }
+  .menuBtn span:nth-child(1) {
+    top: 0;
+  }
+  .menuBtn span:nth-child(2) {
+    top: 3.125vw;
+  }
+  .menuBtn span:nth-child(3) {
+    top: 6.25vw;
+  }
+  .menuBtn.active span:nth-child(1) {
+    transform: translateY(3.125vw) rotate(-45deg);
+  }
+  .menuBtn.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .menuBtn.active span:nth-child(3) {
+    transform: translateY(-3.125vw) rotate(45deg);
+  }
+  .sideBar {
+    padding-top: 37.5vw;
+    width: 81.25vw;
+    left: -125vw;
+    transition: var(--transition);
+  }
+}
