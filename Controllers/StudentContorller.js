@@ -130,6 +130,10 @@ export const updateStudent = async (req, res, next) => {
         if (!student) {
             return next(createError(404, "Student not found."));
         }
+        const studentNum = await StudentModel.findOne({ studentNo });
+        if (studentNum) {
+            return next(createError(403, "Already exist student number."));
+        }
         const updatedStudent = await StudentModel.findByIdAndUpdate(
             req.params.studentId,
             { $set: req.body },
